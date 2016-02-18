@@ -1,7 +1,9 @@
 #!/bin/sh
 
-mvn install:install-file -Dfile=iaikPkcs11Wrapper-1.2.18.jar -DgroupId=at.tugraz.iaik \
-  -DartifactId=iaikPkcs11Wrapper -Dversion=1.2.18 -Dpackaging=jar
+# pkcs11-wrapper
+mvn install:install-file -Dfile=pkcs11-wrapper-1.3.jar -DgroupId=at.tugraz.iaik \
+  -DartifactId=pkcs11-wrapper -Dversion=1.3 -Dpackaging=jar
 
-mvn install:install-file -Dfile=iaikPkcs11Wrapper-native-1.2.18.zip -DgroupId=at.tugraz.iaik \
-  -DartifactId=iaikPkcs11Wrapper-native -Dversion=1.2.18 -Dpackaging=zip
+mvn install:install-file -Dfile=pkcs11-wrapper-native-1.3.zip -DgroupId=at.tugraz.iaik \
+  -DartifactId=pkcs11-wrapper-native -Dversion=1.3 -Dpackaging=zip
+
