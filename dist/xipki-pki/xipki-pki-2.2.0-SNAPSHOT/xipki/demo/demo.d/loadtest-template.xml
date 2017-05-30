@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<enrollTemplate xmlns="http://xipki.org/pki/ca/client/loadtest/v2">
+  <!-- the certificate profile must allow duplication of public key -->
+  <!--
+  <enrollCert>
+    <certprofile>certificate profile name</certprofile>
+    <subject>subject DN</subject>
+    <randomDN>RDN name to be attended with random number, valid values are 
+       NONE, GIVENNAME, SURNAME, STREET, POSTALCODE, O, OU and CN</randomDN>
+    <rsaKey modulusLength="2048"/>
+  </enrollCert>
+  -->
+  <enrollCert>
+    <certprofile>TLS</certprofile>
+    <subject>CN=xipki.org,O=example PKI TLS RSA,C=DE</subject>
+    <randomDN>O</randomDN>
+    <rsaKey modulusLength="2048"/>
+  </enrollCert>
+  <enrollCert>
+    <certprofile>TLS</certprofile>
+    <subject>CN=xipki.org,O=example PKI TLS DSA,C=DE</subject>
+    <randomDN>O</randomDN>
+    <dsaKey pLength="2048"/>
+  </enrollCert>
+  <enrollCert>
+    <certprofile>TLS</certprofile>
+    <subject>CN=xipki.org,O=example PKI EC,C=DE</subject>
+    <randomDN>O</randomDN>
+    <ecKey curve="secp256r1"/>
+  </enrollCert>
+</enrollTemplate>
